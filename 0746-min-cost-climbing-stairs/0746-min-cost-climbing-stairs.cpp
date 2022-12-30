@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int minCostClimbingStairs(vector<int> cost) {
+    int minCostClimbingStairs(vector<int>& cost) {
         int oneStep = cost[1];
         int twoStep = cost[0];
         int curr = 0;
