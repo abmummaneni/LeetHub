@@ -4,7 +4,6 @@ public:
         typedef pair<vector<int>, double> Data;
         priority_queue<Data, vector<Data>, function<bool(Data, Data)> > heap(
                 [](const Data &a, const Data &b) { return a.second < b.second; });
-        unordered_map<double, vector<int>> mp;
         vector<vector<int>> ans;
         for (auto &point: points) {
             double dist = sqrt(point[0] * point[0] + point[1] * point[1]);
